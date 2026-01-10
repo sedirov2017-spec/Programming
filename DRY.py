@@ -33,7 +33,7 @@ def print_sum(start, end):
     print(f"Сумма чисел от {start} до {end}:")
     print(f"Результат: {result}")
 
-# Использование функции
+#Использование функции
 print_sum(1, 10)
 print_sum(20, 30)
 print_sum(35, 45)
