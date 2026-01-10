@@ -4,9 +4,8 @@ special_symbols = 'ьЬъЪ'
 
 def analyzer(text: str):
     vowels_letters = sum(text.count(letter) for letter in vowels)
-    total_letters = sum(text.count(letter) for letter in consonants)
-    special_count = sum(text.count(s) for s in special_symbols)
-    consonants_letters = total_letters
+    consonants_letters = sum(text.count(letter) for letter in consonants)
+    special_count = sum(text.count(letter) for letter in special_symbols)
     space_count = text.count(' ')
     words_count = len(text.split())
 
@@ -23,4 +22,5 @@ def analyzer(text: str):
     print(f'Количество слов: {words_count}')
 
 text = input()
+
 analyzer(text)
