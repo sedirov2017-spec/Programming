@@ -1,0 +1,39 @@
+# Плохо: одинаковый код повторяется
+print("Сумма чисел от 1 до 10:")
+sum1 = 0
+for i in range(1, 11):
+    sum1 += i
+print(f"Результат: {sum1}")
+
+print("Сумма чисел от 20 до 30:")
+sum2 = 0
+for i in range(20, 31):
+    sum2 += i
+print(f"Результат: {sum2}")
+
+print("Сумма чисел от 35 до 45:")
+sum3 = 0
+for i in range(35, 46):
+    sum3 += i
+print(f"Результат: {sum3}")
+
+
+
+# Хорошо: логика вынесена в функцию
+def calculate_sum(start, end):
+    """Вычисляет сумму чисел в диапазоне"""
+    total = 0
+    for i in range(start, end + 1):
+        total += i
+    return total
+
+def print_sum(start, end):
+    """Печатает результат вычисления суммы"""
+    result = calculate_sum(start, end)
+    print(f"Сумма чисел от {start} до {end}:")
+    print(f"Результат: {result}")
+
+# Использование функции
+print_sum(1, 10)
+print_sum(20, 30)
+print_sum(35, 45)
