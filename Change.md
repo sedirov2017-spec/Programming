@@ -192,19 +192,6 @@ jobs:                      # Задачи
 **b. Какое название этого файла для домашних работ**
 Обычно `ci.yml`, `tests.yml` или что-то специфичное, например `homework-check.yml`.
 
-### 19. На какие события может реагировать workflow?
-- `push` — push в репозиторий
-- `pull_request` — создание/обновление pull request
-- `schedule` — по расписанию (cron)
-- `workflow_dispatch` — ручной запуск
-- `release` — создание релиза
-
-**a. Что такое job в workflow?**
-**Job** — набор шагов, которые выполняются на одном runner'е. Может содержать несколько steps.
-
-**b. Что такое step в workflow?**
-**Step** — отдельная задача в job (например, checkout кода, установка зависимостей, запуск тестов).
-
 ### 20. Что такое runner в GitHub/GitVerse Actions?
 **Runner** — сервер, который выполняет workflow. Может быть:
 - **GitHub-hosted:** Предоставляемые GitHub/GitVerse
