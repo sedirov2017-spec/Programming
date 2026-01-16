@@ -190,36 +190,6 @@
 4. Удалить маркеры конфликта
 5. Выполнить `git add` и `git commit` для завершения слияния
 
-### 14. Как настроить branch protection в GitVerse, чтобы нельзя было push'ить напрямую в master?
-В GitVerse (как и в GitHub):
-1. Перейти в настройки репозитория
-2. Найти раздел "Branches" или "Защита веток"
-3. Добавить правило для ветки master/main
-4. Включить опции:
-   - Require pull request reviews before merging
-   - Require status checks to pass
-   - Include administrators
-
-**a. Как создать новую ветку?**
-```bash
-git checkout -b feature/new-feature
-```
-или через GitVerse интерфейс.
-
-**b. Когда удаление веток (branches) актуально и зачем?**
-- После слияния feature-ветки в main
-- Для очистки устаревших веток
-- Чтобы избежать путаницы в больших проектах
-
-**c. Как переключиться на другую ветку?**
-```bash
-git checkout branch-name
-```
-или
-```bash
-git switch branch-name
-```
-
 ### 15. Что такое pull request (PR)?
 **Pull Request (PR)** — запрос на слияние изменений из одной ветки в другую. Позволяет провести code review перед слиянием.
 
